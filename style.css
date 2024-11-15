@@ -1,0 +1,374 @@
+.navbarnavbar-expand-lg{
+background-color: black;
+position:fixed;
+}
+.btn-outline-success{
+    background:linear-gradient(#ffc2c2,#ff5450);
+    color: black;
+}
+.container-fluid{
+    color: #ff5450;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.d-flex{
+    gap: 10px;
+}
+.conatainer{
+ max-width: 800px;
+    text-align: center;
+    padding: 50px;
+}
+.img{
+    margin-top: -20%;
+    margin-left: 700px;
+}
+.animated-image{
+    animation: zoomIn 3s ease-in-out infinite;
+}
+/* Keyframes for zoom-in effect */
+@keyframes zoomIn {
+    0% {
+      transform: scale(1);  /* Initial scale (normal size) */
+    }
+    50% {
+      transform: scale(1.5);  /* Zoom in to 1.5 times the original size */
+    }
+    100% {
+      transform: scale(1);  /* Return to the original size */
+    }
+  }
+  .animation-image{
+    animation: slideOutUp 3s ease-in-out forwards;
+  }
+  /* Keyframes for slide-out-up effect */
+@keyframes slideOutUp {
+    0% {
+      transform: translateY(0);  /* Initial position */
+      opacity: 1;  /* Fully visible */
+    }
+    100% {
+      transform: translateY(-100vh);  /* Move up out of the viewport */
+      opacity: 0;  /* Fade out as it moves up */
+    }
+  }
+.testimonial{
+    transform: translateX(-100%);  /* Start off-screen to the left */
+    animation: bounceInLeft 1s  ease-out forwards ;  /* Apply the bounce-in-left animation */
+  }
+  /* Keyframes for bounce-in-left effect */
+@keyframes bounceInLeft {
+    0% {
+      transform: translateX(-100%);  /* Start off-screen to the left */
+     
+    }
+    60% {
+      transform: translateX(30px);  /* Move a bit to the right */
+  
+    }
+    80% {
+      transform: translateX(-10px);  /* Move left slightly (bounce effect) */
+    }
+    100% {
+      transform: translateX(0);  /* Set to final position (original position) */
+    }
+  }
+  .containerp-4pb-0{
+    animation: flashEffect 1s  infinite;  /* Apply flash animation */
+  }
+ /* Keyframes for flash effect */
+@keyframes flashEffect {
+    0% {
+      opacity: 2;  /* Fully visible */
+    }
+    50% {
+      opacity: 0;  /* Invisible (flashes out) */
+    }
+    100% {
+      opacity: 2;  /* Fully visible again */
+    }
+  }
+/* For 320px (Mobile Portrait) */
+@media (max-width: 320px) {
+    .container h1 {
+        font-size: 1.2em; /* Further reduce the font size for smaller screens */
+    }
+
+    .container p {
+        font-size: 0.9em; /* Adjust paragraph font size for better readability */
+    }
+
+    .btn {
+        padding: 12px 15px; /* Slightly smaller button padding for 320px screens */
+        font-size: 0.9em; /* Smaller font size for the button */
+    }
+    .img{
+        display: none;
+}
+}
+/* For 768px (Tablet Portrait / Small Screens) */
+@media (max-width: 768px) {
+    .container {
+        margin-left: 20px;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .container h1 {
+        font-size: 2em;
+    }
+
+    .container p {
+        font-size: 1.1em;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .img {
+        margin-top: 20%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .img img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+/* For 1024px (Tablet Landscape / Large Screens) */
+@media (max-width: 1024px) {
+    .container {
+        margin-left: 40px;
+        margin-top: 80px;
+        text-align: left;
+    }
+
+    .container h1 {
+        font-size: 2.2em;
+    }
+
+    .container p {
+        font-size: 1.2em;
+    }
+
+    .img {
+        margin-top: -10%;
+        margin-left: 50px;
+    }
+
+    .img img {
+        width: 60%;
+        height: auto;
+    }
+}
+
+/* For 1280px and up */
+@media (min-width: 1280px) {
+    .container {
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+
+    .container h1 {
+        font-size: 2.5em;
+    }
+
+    .container p {
+        font-size: 1.3em;
+    }
+
+    .btn {
+        padding: 15px 30px;
+    }
+
+    .img {
+        margin-top: -20%;
+        margin-left: 100px;
+    }
+
+    .img img {
+        width: 350px;
+        height: 200px;
+    }
+}
+.h3{
+    text-align: center;
+    margin-top: -100px;
+}
+.img-card{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+}
+.p{
+    text-align: center;
+}
+.menu{
+    display: flex;
+    gap:40px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10 black;
+    justify-content: space-between;
+}
+
+
+
+.container {
+    padding: 50px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.subtext {
+    font-size: 1em;
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    width: 150px;
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.stars {
+    color: #ffcc00;
+    font-size: 1em;
+}
+
+.cta {
+    margin-top: 40px;
+    font-size: 1.2em;
+    color: white;
+}
+
+.cta span {
+    color: #ff33cc;
+}
+
+
+
+
+.cta-container {
+    text-align: center;
+    position: relative;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+.cta-circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: conic-gradient(from 180deg, #ff33cc, #3333ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-content {
+    background-color: #1a1a1a;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.cta-content p {
+    margin: 0;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #1a1a1a;
+    background-color: #7f8aff;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #5f6bcc;
+}
+
+
+@media (max-width: 320px) {
+.cta-container {
+    text-align: center;
+    position: relative;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+}
+
+@media (max-width: 320px) {
+    .menu {
+      flex-direction: column;
+      padding: 20px;
+      gap: 20px;
+    }
+  
+    .card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .card-body {
+      padding: 15px;
+    }
+  
+    .card-title {
+      font-size: 16px;
+    }
+  
+    .card-text {
+      font-size: 14px;
+    }
+  
+    .btn {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+    }
+  }
